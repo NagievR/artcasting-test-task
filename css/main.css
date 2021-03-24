@@ -1,9 +1,119 @@
-html {
-  box-sizing: border-box;
+.header {
+  position: relative;
+  max-width: 1140px;
+  padding: 20px;
+  margin: 0 auto;
+  outline: 1px dotted darkslategrey;
 }
 
-*, *::after, *::before {
-  box-sizing: border-box;
+.header-content-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  margin-right: 3.5%;
+  width: 16.5%;
+}
+
+.logo-link img {
+  height: 100%;
+  width: 100%;
+}
+
+.auth {
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 20px;
+}
+
+.auth-mobile,
+.burger {
+  display: none;
+}
+
+.burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 8px;
+}
+
+.burger.active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.burger.active span {
+  transform: scale(0);
+}
+
+.navigation {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+
+.navigation li {
+  margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+  .navigation ul {
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (max-width: 710px) {
+  .header-content-wrap {
+    justify-content: space-between;
+  }
+  .navigation {
+    display: none;
+  }
+  .header .auth,
+  .header button {
+    display: none;
+  }
+  .header .logo-link {
+    height: 31px;
+    width: 112px;
+    margin: 0;
+  }
+  .auth-mobile,
+  .burger {
+    display: block;
+  }
+  .burger {
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 18px;
+  }
+  .burger span,
+  .burger::after,
+  .burger::before {
+    content: '';
+    transition: 0.25s;
+    position: absolute;
+    background-color: #383838;
+    width: 100%;
+    height: 1px;
+  }
+  .burger span {
+    top: 9px;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .burger::before {
+    top: 0;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -343,5 +453,46 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.colored-btn,
+.transparent-btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding-left: 2.2%;
+  padding-right: 2.2%;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  border: 1px solid #68CBB3;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.colored-btn {
+  background-color: #68CBB3;
+  color: #fff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+body {
+  font-family: "PF Highway Sans Pro";
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.margin-right-1 {
+  margin-right: 0.8%;
 }
 /*# sourceMappingURL=main.css.map */

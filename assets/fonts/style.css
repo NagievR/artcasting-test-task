@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PF Highway Sans Pro';
+    src: local('PF Highway Sans Pro Regular'), local('PF-Highway-Sans-Pro-Regular'),
+        url('PFHighwaySansPro-Regular.woff2') format('woff2'),
+        url('PFHighwaySansPro-Regular.woff') format('woff'),
+        url('PFHighwaySansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
