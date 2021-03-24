@@ -34,6 +34,36 @@
   display: none;
 }
 
+.auth-mobile {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 16px;
+  height: 17px;
+}
+
+.auth-mobile::before {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #68CBB3;
+  width: 14px;
+  height: 14px;
+  top: 9px;
+}
+
+.auth-mobile::after {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #68CBB3;
+  width: 6px;
+  height: 6px;
+  left: 4px;
+}
+
 .burger.active::after,
 .burger.active::before,
 .burger.active span {
