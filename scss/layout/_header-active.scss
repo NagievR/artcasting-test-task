@@ -1,0 +1,79 @@
+@import "../abstracts/variables";
+
+.header.active {
+  background-color: $color-dark;
+  color: $color-white;
+  height: 100vh;
+
+  .mobile-media {
+    display: flex;
+    margin-top: 30px;
+  
+    li {
+      margin-right: 10px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $color-white;
+    }
+  }
+
+  .mobile-buttons-wrap {
+    display: flex;
+    flex-direction: column;
+    
+    button {
+      text-align: center;
+      display: block;
+    }
+  
+    button:first-child {
+      margin-bottom: 5px;
+    }
+  
+    button:nth-child(2) {
+      color: $color-white;
+
+      &:hover {
+        color: $base-color;
+      }
+    }
+  }
+
+  .burger::after,
+  .burger::before,
+  .burger span {
+    background-color: $color-white;
+  }
+  .burger::after {
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+  .burger::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .burger span {
+    transform: scale(0);
+  }
+}
+
+@media (max-width: 710px) {
+  .header.active {
+    .navigation {
+      display: block;
+
+      ul {  
+        flex-direction: column;
+        margin: 37px 0 30px 0;
+  
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

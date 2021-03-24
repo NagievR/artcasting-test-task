@@ -1,9 +1,5 @@
-import toggleMenu from "./modules/toggle-burger.js";
+import toggleMenu from "./modules/toggle-menu.js";
 
 const header = document.querySelector('.header');
 const burger = document.querySelector('.burger');
-const navigation = document.querySelector('.navigation');
-
-toggleMenu(burger, 'active', [burger, navigation, header]);
-
-
+toggleMenu(burger, 'active', header);
