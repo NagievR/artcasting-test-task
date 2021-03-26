@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-  box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 15px 0 rgba(27, 27, 27, 0.08);
   transition: 0.3s;
 }
 
@@ -223,6 +223,160 @@
   .header.active .navigation ul li {
     margin-bottom: 20px;
   }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.section-inner {
+  position: relative;
+  width: 1140px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.banner {
+  background-color: #95D1C5;
+}
+
+.candidates {
+  background-color: #F4FAF9;
+}
+
+.key-word-input {
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 10px 14px 10px 37px;
+  outline: none;
+  font-size: 14px;
+  position: relative;
+}
+
+.key-word-input::placeholder {
+  position: absolute;
+  left: 37px;
+  color: #BDBDBD;
+  font-weight: 300;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap::after {
+  content: url("../../assets/images/search.svg");
+  position: absolute;
+  left: 11px;
+  top: 12px;
+}
+
+.colored-btn,
+.transparent-btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  transition: all 0.25s;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  border: 1px solid #68CBB3;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.transparent-btn:hover {
+  color: #68CBB3;
+}
+
+.colored-btn {
+  background-color: #68CBB3;
+  color: #ffffff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.colored-btn:hover {
+  background-color: #57B9A1;
+}
+
+.dropdown {
+  user-select: none;
+}
+
+.dropdown.active-dropdown .options-list {
+  display: block;
+}
+
+.dropdown.active-dropdown .selected {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-color: #68CBB3;
+}
+
+.dropdown.active-dropdown .selected::after {
+  transform: rotateX(180deg);
+}
+
+.dropdown,
+.options-list {
+  width: 182px;
+  font-size: 14px;
+}
+
+.options-list,
+.selected {
+  background-color: #ffffff;
+}
+
+.options-list {
+  position: absolute;
+  z-index: 9;
+  border: 1px solid #E0E0E0;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 13px 4px rgba(30, 30, 30, 0.1);
+  display: none;
+}
+
+.selected {
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.selected::after {
+  content: url("../../assets/images/down-arrow.svg");
+  position: absolute;
+  right: 15px;
+  transition: 0.15s;
+}
+
+.selected,
+.option {
+  padding: 11px 15px;
+}
+
+.option {
+  transition: 0.15s;
+}
+
+.option:hover {
+  color: #68CBB3;
 }
 
 ul {
@@ -572,44 +726,6 @@ template {
  */
 [hidden] {
   display: none;
-}
-
-.colored-btn,
-.transparent-btn {
-  cursor: pointer;
-  text-transform: uppercase;
-  border: none;
-  outline: none;
-  border-radius: 6px;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  transition: all 0.25s;
-}
-
-.transparent-btn {
-  background-color: transparent;
-  border: 1px solid #68CBB3;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.transparent-btn:hover {
-  color: #68CBB3;
-}
-
-.colored-btn {
-  background-color: #68CBB3;
-  color: #ffffff;
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-
-.colored-btn:hover {
-  background-color: #57B9A1;
 }
 
 body {

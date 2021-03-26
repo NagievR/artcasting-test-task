@@ -1,0 +1,72 @@
+@import "../abstracts/variables";
+
+.dropdown {
+  // display: inline-block;
+  user-select: none;
+
+  &.active-dropdown {
+    .options-list {
+      display: block;
+    }
+
+    .selected {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-color: $base-color;
+
+      &::after {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}
+
+.dropdown,
+.options-list {
+  width: 182px;
+  font-size: 14px;
+}
+
+.options-list,
+.selected {
+  background-color: $color-white;
+}
+
+.options-list {
+  position: absolute;
+  z-index: 9;
+  border: 1px solid #E0E0E0;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 13px 4px rgba(30, 30, 30, 0.1);
+  display: none;
+}
+
+.selected {
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: url('../../assets/images/down-arrow.svg');
+    position: absolute;
+    right: 15px;
+    transition: 0.15s;
+  }
+}
+
+.selected,
+.option {
+  padding: 11px 15px;
+}
+
+.option {
+  transition: 0.15s;
+}
+
+.option:hover {
+  color: $base-color;
+}
