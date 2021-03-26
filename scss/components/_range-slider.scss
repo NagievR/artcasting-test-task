@@ -1,0 +1,28 @@
+@import "../abstracts/variables";
+
+
+.range-slider-wrap {
+  height: 65px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.range-slider-wrap .slider {
+  position: relative;
+  top: 45px;
+  z-index: 15;
+  height: 5px;
+  background-color: #E0E0E0;
+  border-radius: 2px;
+}
+
+// .range-slider .track {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   height: 4px;
+//   border-radius: 2px;
+//   background-color: #E0E0E0;
+// }

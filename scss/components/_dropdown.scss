@@ -1,11 +1,12 @@
 @import "../abstracts/variables";
 
-.dropdown {
+.dropdown-styles {
   // display: inline-block;
   user-select: none;
+  margin-right: 10px;
 
   &.active-dropdown {
-    .options-list {
+    .dropping-block {
       display: block;
     }
 
@@ -21,18 +22,18 @@
   }
 }
 
-.dropdown,
-.options-list {
+.dropdown-styles,
+.dropping-block {
   width: 182px;
   font-size: 14px;
 }
 
-.options-list,
+.dropping-block,
 .selected {
   background-color: $color-white;
 }
 
-.options-list {
+.dropping-block {
   position: absolute;
   z-index: 9;
   border: 1px solid #E0E0E0;
@@ -60,7 +61,7 @@
 
 .selected,
 .option {
-  padding: 11px 15px;
+  padding: 10px 15px;
 }
 
 .option {
