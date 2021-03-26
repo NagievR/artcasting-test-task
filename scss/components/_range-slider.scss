@@ -2,27 +2,79 @@
 
 
 .range-slider-wrap {
-  height: 65px;
-  padding: 10px 15px;
   position: relative;
+  margin: 58px 15px 26px 15px;
 }
 
 .range-slider-wrap .slider {
-  position: relative;
-  top: 45px;
-  z-index: 15;
-  height: 5px;
-  background-color: #E0E0E0;
-  border-radius: 2px;
+	position: relative;
+	height: 4px;
 }
 
-// .range-slider .track {
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-//   height: 4px;
-//   border-radius: 2px;
-//   background-color: #E0E0E0;
+.slider .track {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #E0E0E0;
+}
+
+.slider .thumb {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: $base-color;
+	border-radius: 50%;
+  transition: box-shadow 0.22s;
+
+  &.thumb-hover {
+    box-shadow: 0 0 0 6px rgba($base-color, 0.3);
+  }
+}
+
+.slider .range {
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: $base-color;
+}
+
+.slider .thumb.left {
+	left: 25%;
+	transform: translate(-6px, -4px);
+}
+
+.slider .thumb.right {
+	right: 25%;
+	transform: translate(6px, -4px);
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+	pointer-events: none;
+	position: absolute;
+	z-index: 5;
+	height: 10px;
+	width: 100%;
+	opacity: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	pointer-events: all;
+	width: 12px;
+	height: 12px;
+	background-color: red;
+}
+
+// #input-left {
+//   top: 19px;
+// }
+
+// #input-right {
+//   top: -19px;
 // }
