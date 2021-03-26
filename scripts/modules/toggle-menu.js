@@ -21,7 +21,13 @@ const toggleMenu = (trigger, className, selector) => {
 };
 
 const toggleLogoImage = (elem, condition) => {
-  elem.src = condition ? logo : logoWhite;
+  if (condition) {
+    elem.src = logo;
+    document.body.style.overflow = 'visible';
+  } else {
+    elem.src = logoWhite;
+    document.body.style.overflow = 'hidden';
+  }
 }
 
 export default toggleMenu;

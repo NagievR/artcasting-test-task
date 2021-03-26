@@ -2,8 +2,10 @@
 @import "../abstracts/mixins";
 
 .dropdown-styles {
+  position: relative;
   user-select: none;
   margin-right: 10px;
+  margin-bottom: 10px;
 
   &.active-dropdown {
     .dropping-block {
@@ -61,7 +63,7 @@
 
 .selected,
 .option {
-  padding: 10px 15px;
+  padding: 11px 15px;
 }
 
 .option {
@@ -71,3 +73,13 @@
 .option:hover {
   color: $base-color;
 }
+
+
+@media (max-width: 766px) {
+  .dropdown-styles,
+  .dropping-block {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+

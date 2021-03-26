@@ -1,5 +1,4 @@
-@import "../abstracts/variables";
-
+@import "../abstracts/variables"; 
 
 .colored-btn,
 .transparent-btn {
@@ -39,4 +38,10 @@
   }
 }
 
+@media (max-width: 766px) {
+  .colored-btn,
+  .transparent-btn {
+    text-align: center;
+  }
+}
 
