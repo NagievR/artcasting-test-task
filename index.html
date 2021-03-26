@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/main.css" rel="stylesheet" />
-  <link href = "./assets/fonts/style.css" rel="stylesheet" />
+  <link href = "./assets/fonts/PFHighwaySansPro-Light/style.css" rel="stylesheet" />
+  <link href = "./assets/fonts/PFHighwaySansPro-Regular/style.css" rel="stylesheet" />
   <title>Document</title>
 </head>
 <body>
@@ -47,7 +48,46 @@
     </div> <!-- /header-container -->
   </header>
 
-  <main></main>
+  <main class="main">
+    <section class="filters">
+      <div class="section-inner">
+
+        <div data-type="casting" class='dropdown margin-right-1'>
+          <div class='selected'>Кастинг</div>
+          <ul class='options-list'>
+            <li class='option'>Вариант 1</li>
+            <li class='option'>Вариант 2</li>
+            <li class='option'>Вариант 3</li>
+          </ul>
+        </div>
+
+        <div data-type="gender" class='dropdown margin-right-1'>
+          <div class='selected'>Пол</div>
+          <ul class='options-list'>
+            <li class='option'>Мужской</li>
+            <li class='option'>Женский</li>
+          </ul>
+        </div>
+
+        <div class="input-wrap">
+          <input class="key-word-input" type="text" placeholder="Ключевая фраза" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="section-inner">
+        another content 
+      </div>
+    </section>
+
+    <section class="candidates">
+      <div class="section-inner">
+        content
+      </div>
+    </section>
+  </main>
   
   <script type="module" src="./scripts/index.js"></script>
 </body>

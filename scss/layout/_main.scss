@@ -1,0 +1,49 @@
+@import "../abstracts/variables";
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.section-inner {
+  position: relative;
+  width: 1140px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.banner {
+  background-color: $base-color-lighter;
+}
+
+.candidates {
+  background-color: $base-color-ultralite;
+}
+
+.key-word-input {
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 10px 14px 10px 37px;
+  outline: none;
+  font-size: 14px;
+  position: relative;
+
+  &::placeholder {
+    position: absolute;
+    left: 37px;
+    color: #BDBDBD;
+    font-weight: 300;
+  }
+}
+
+.input-wrap {
+  position: relative;
+
+  &::after {
+    content: url('../../assets/images/search.svg');
+    position: absolute;
+    left: 11px;
+    top: 12px;
+  }
+}

@@ -1,8 +1,12 @@
 @import "./layout/header";
 @import "./layout/header-active";
+@import "./layout/main";
+
+@import "./components/buttons";
+@import "./components/dropdown";
+@import "./components/range-slider";
 
 @import "./base/base";
 @import "./vendors/normalize";
-@import "./components/buttons";
 @import "./base/typography";
 @import "./abstracts/helpers"
