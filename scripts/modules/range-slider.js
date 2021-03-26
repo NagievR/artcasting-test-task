@@ -4,6 +4,9 @@ const inputRight = document.getElementById('input-right');
 const thumbLeft = document.querySelector('.slider > .thumb.left');
 const thumbRight = document.querySelector('.slider > .thumb.right');
 const range = document.querySelector('.slider > .range');
+const leftThumbAge = document.getElementById('left-thumb-age');
+const rightThumbAge = document.getElementById('right-thumb-age');
+
 const activeClass = 'active-dropdown';
 
 slider.classList.add(activeClass);
@@ -28,9 +31,8 @@ const setLeftPosition = () => {
   const value = Math.min(parseInt(inputLeft.value), parseInt(inputRight.value));
   const percent = ((value - min) / (max - min)) * 100;
 
-  console.log('left: ' + value);
-
   inputLeft.value = value;
+  leftThumbAge.innerHTML = value + ' лет';
   thumbLeft.style.left = percent + "%";
   range.style.left = percent + "%";
 }
@@ -42,9 +44,8 @@ const setRightPosition = () => {
   const value = Math.max(parseInt(inputRight.value), parseInt(inputLeft.value));
   const percent = ((value - min) / (max - min)) * 100;
 
-  console.log('right: ' + value);
-
   inputRight.value = value;
+  rightThumbAge.innerHTML = value + ' лет';
   thumbRight.style.right = (100 - percent) + "%";
   range.style.right = (100 - percent) + "%";
 }
