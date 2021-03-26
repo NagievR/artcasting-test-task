@@ -1,5 +1,5 @@
 @import "../abstracts/variables";
-
+@import "../abstracts/mixins";
 
 .range-slider-wrap {
   position: relative;
@@ -82,6 +82,6 @@ input[type=range]::-webkit-slider-thumb {
   top: -40px;
   left: -20px;
   padding: 8px 6px;
-  border: 1px solid #E0E0E0;
+  @include light-border;
   border-radius: 5px;
 }
