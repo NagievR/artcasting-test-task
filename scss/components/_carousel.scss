@@ -1,0 +1,60 @@
+.carousel-list {
+  width: 9999px;
+  padding: 5px;
+  padding-right: 0;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+}
+
+.candidate-card {
+  margin-right: 10px;
+}
+
+.candidates-carousel{
+  position: relative;
+  margin: 0 auto;
+}
+
+.strip {
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+  top: calc(50% - 30px);
+  z-index: 10;
+  box-shadow: 0 6px 15px 2px rgba(99, 99, 99, 0.4);
+  outline: none;
+  border: 0;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px 2px rgba(99, 99, 99, 0.4);
+  }
+}
+.arrow.prev{
+  left: -15px;
+
+  &::after {
+    content: url('../../assets/images/arrow-prev.svg');
+  }
+}
+.arrow.next{
+  right: -15px;
+
+  &::after {
+    content: url('../../assets/images/arrow-next.svg');
+  }
+}
+
+@media (max-width: 340px) {
+  .arrow {
+    top: calc(50% - 40px);
+  }
+}

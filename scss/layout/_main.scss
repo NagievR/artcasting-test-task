@@ -15,7 +15,10 @@ section {
   flex-wrap: wrap;
 }
 
-
+.candidates-wrap {
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
 
 .candidate-card,
 .add-profile {
@@ -25,6 +28,7 @@ section {
 
 .candidates > .section-inner {
   padding-top: 100px;
+  display: block;
 }
 
 .candidates {
@@ -39,13 +43,8 @@ section {
   }
 }
 
-.candidates-carousel {
-  display: flex;
-}
-
 .candidate-card {
   position: relative;
-  margin-right: 10px;
   border-radius: 5px;
   transition: 0.2s;
 
@@ -79,6 +78,7 @@ section {
   p {
     margin: 0 0 5px 0;
     color: $color-dark;
+    letter-spacing: 0;
 
     &:last-child {
       margin-bottom: 0;
@@ -92,9 +92,10 @@ section {
 .role {
   font-size: 14px;
   font-weight: 300;
+  height: 24px;
 }
 .age {
-  
+  font-size: 14px;
 }
 
 .add-profile {
@@ -102,13 +103,16 @@ section {
   background-color: #7C4D82;
   color: $color-white;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   font-size: 14px;
   position: absolute;
-  right: 20px;
+  right: 5px;
+  padding: 10px;
+  box-sizing: border-box;
 
   &::before {
     content: url('../../assets/images/plus-icon.svg');
@@ -128,7 +132,11 @@ section {
       margin-bottom: 20px;
     }
   }
-
+  .candidate-card,
+  .add-profile {
+    width: 172px;
+    height: 336px;
+  }
 }
 
 @media (max-width: 710px) {
@@ -137,5 +145,36 @@ section {
       font-size: 30px;
       margin-bottom: 13px;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .candidate-card,
+  .add-profile {
+    width: 130px;
+    height: 286px;
+  }
+
+  .candidate-photo-wrap {
+    height: 150px;
+  }
+
+  .summary {
+    height: 136px;
+  }
+
+  .name,
+  .age {
+    font-size: 14px;
+  }
+  .name {
+    height: 55px;
+  }
+  .role {
+    height: 37px;
+    font-size: 12px;
+  }
+  .age {
+    height: 18px;
   }
 }
