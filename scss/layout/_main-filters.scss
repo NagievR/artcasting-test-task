@@ -1,5 +1,10 @@
 @import "../abstracts/variables";
 
+.filters {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 .input-wrap {
   position: relative;
   margin-right: 10px;
@@ -56,6 +61,7 @@
 .filter-buttons-wrap {
   display: flex;
   align-items: baseline;
+  margin-bottom: 10px;
 }
 
 
@@ -77,6 +83,10 @@
 }
 
 @media (max-width: 766px) {
+  .filters {
+    padding-bottom: 20px;
+  }
+
   .input-wrap {
     margin-right: 0;
     width: calc(100% - 37px);
