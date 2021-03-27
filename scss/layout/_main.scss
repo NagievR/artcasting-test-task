@@ -14,10 +14,43 @@ section {
   flex-wrap: wrap;
 }
 
-.candidates {
-  background-color: $base-color-ultralite;
+
+
+
+.candidates > .section-inner {
+  padding-top: 100px;
 }
 
+.candidates {
+  background-color: $base-color-ultralite;
 
+  h2 {
+    color: #383838;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 0;
+    margin: 0 0 40px 0;
+  }
+}
 
+@media (max-width: 890px) {
+  .candidates > .section-inner {
+    padding-top: 50px;
+  }
+  .candidates {
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  }
 
+}
+
+@media (max-width: 710px) {
+  .candidates {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 13px;
+    }
+  }
+}
