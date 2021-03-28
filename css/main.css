@@ -286,7 +286,7 @@ section {
 }
 
 .extra-filters::before {
-  content: url("https://nagievr.github.io/assets/images/filters.svg");
+  content: url("https://raw.githubusercontent.com/NagievR/artcasting-test-task/8c752e305d3c94a6c30b713b3e90ed4e7cae708d/assets/images/filters.svg");
   position: absolute;
   left: 28px;
   top: 11px;
