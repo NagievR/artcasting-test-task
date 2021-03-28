@@ -251,7 +251,7 @@ section {
 }
 
 .input-wrap::after {
-  content: url("https://nagievr.github.io/assets/images/search.svg");
+  content: url("https://raw.githubusercontent.com/NagievR/artcasting-test-task/8c752e305d3c94a6c30b713b3e90ed4e7cae708d/assets/images/search.svg");
   position: absolute;
   left: 11px;
   top: 12px;
@@ -571,7 +571,7 @@ section {
 }
 
 .add-profile::before {
-  content: url("https://nagievr.github.io/assets/images/plus-icon.svg");
+  content: url("https://raw.githubusercontent.com/NagievR/artcasting-test-task/8c752e305d3c94a6c30b713b3e90ed4e7cae708d/assets/images/plus-icon.svg");
   cursor: pointer;
   display: block;
   margin-bottom: 8px;
@@ -724,7 +724,7 @@ section {
 }
 
 .selected::after {
-  content: url("https://nagievr.github.io/assets/images/down-arrow.svg");
+  content: url("https://raw.githubusercontent.com/NagievR/artcasting-test-task/8c752e305d3c94a6c30b713b3e90ed4e7cae708d/assets/images/down-arrow.svg");
   position: absolute;
   right: 15px;
   transition: 0.15s;
@@ -883,7 +883,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .arrow.prev::after {
-  content: url("https://nagievr.github.io/assets/images/arrow-prev.svg");
+  content: url("https://raw.githubusercontent.com/NagievR/artcasting-test-task/8c752e305d3c94a6c30b713b3e90ed4e7cae708d/assets/images/arrow-prev.svg");
 }
 
 .arrow.next {
@@ -891,7 +891,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .arrow.next::after {
-  content: url("https://nagievr.github.io/assets/images/arrow-next.svg");
+  content: url("https://raw.githubusercontent.com/NagievR/artcasting-test-task/8c752e305d3c94a6c30b713b3e90ed4e7cae708d/assets/images/arrow-next.svg");
 }
 
 @media (max-width: 340px) {

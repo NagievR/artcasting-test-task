@@ -10,3 +10,5 @@ toggleMenu(burger, 'active', header);
 dropdownToggle();
 rangeSlider();
 defineCardsAmount();
+
+console.log('upd...');
