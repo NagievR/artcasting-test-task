@@ -240,166 +240,6 @@ section {
   flex-wrap: wrap;
 }
 
-.candidates-wrap {
-  margin: 0 auto;
-  margin-bottom: 80px;
-}
-
-.candidate-card,
-.add-profile {
-  width: 182px;
-  height: 346px;
-}
-
-.candidates > .section-inner {
-  padding-top: 100px;
-  display: block;
-}
-
-.candidates {
-  background-color: #F4FAF9;
-}
-
-.candidates h2 {
-  color: #383838;
-  font-size: 48px;
-  font-weight: 300;
-  letter-spacing: 0;
-  margin: 0 0 40px 0;
-}
-
-.candidate-card {
-  position: relative;
-  border-radius: 5px;
-  transition: 0.2s;
-}
-
-.candidate-card:hover {
-  box-shadow: 0 0 2px 1px #68CBB3;
-}
-
-.candidate-photo-wrap {
-  height: 238px;
-}
-
-.candidate-photo-wrap img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.summary {
-  box-sizing: border-box;
-  height: 108px;
-  padding: 8px;
-  border: 1px solid #E0E0E0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top: none;
-  background-color: #ffffff;
-}
-
-.summary p {
-  margin: 0 0 5px 0;
-  color: #383838;
-  letter-spacing: 0;
-}
-
-.summary p:last-child {
-  margin-bottom: 0;
-}
-
-.name {
-  height: 40px;
-}
-
-.role {
-  font-size: 14px;
-  font-weight: 300;
-  height: 24px;
-}
-
-.age {
-  font-size: 14px;
-}
-
-.add-profile {
-  border-radius: 5px;
-  background-color: #7C4D82;
-  color: #ffffff;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.add-profile::before {
-  content: url("../../assets/images/plus-icon.svg");
-  cursor: pointer;
-  display: block;
-  margin-bottom: 8px;
-}
-
-@media (max-width: 890px) {
-  .candidates > .section-inner {
-    padding-top: 50px;
-  }
-  .candidates h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  .candidate-card,
-  .add-profile {
-    width: 172px;
-    height: 336px;
-  }
-}
-
-@media (max-width: 710px) {
-  .candidates h2 {
-    font-size: 30px;
-    margin-bottom: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  .candidate-card,
-  .add-profile {
-    width: 130px;
-    height: 286px;
-  }
-  .candidate-photo-wrap {
-    height: 150px;
-  }
-  .summary {
-    height: 136px;
-  }
-  .name,
-  .age {
-    font-size: 14px;
-  }
-  .name {
-    height: 55px;
-  }
-  .role {
-    height: 37px;
-    font-size: 12px;
-  }
-  .age {
-    height: 18px;
-  }
-}
-
 .filters {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -411,7 +251,7 @@ section {
 }
 
 .input-wrap::after {
-  content: url("../../assets/images/search.svg");
+  content: url("https://nagievr.github.io/assets/images/search.svg");
   position: absolute;
   left: 11px;
   top: 12px;
@@ -446,7 +286,7 @@ section {
 }
 
 .extra-filters::before {
-  content: url("../../assets/images/filters.svg");
+  content: url("https://nagievr.github.io/assets/images/filters.svg");
   position: absolute;
   left: 28px;
   top: 11px;
@@ -627,6 +467,166 @@ section {
   }
 }
 
+.candidates-wrap {
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.candidate-card,
+.add-profile {
+  width: 182px;
+  height: 346px;
+}
+
+.candidates > .section-inner {
+  padding-top: 100px;
+  display: block;
+}
+
+.candidates {
+  background-color: #F4FAF9;
+}
+
+.candidates h2 {
+  color: #383838;
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 0;
+  margin: 0 0 40px 0;
+}
+
+.candidate-card {
+  position: relative;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.candidate-card:hover {
+  box-shadow: 0 0 2px 1px #68CBB3;
+}
+
+.candidate-photo-wrap {
+  height: 238px;
+}
+
+.candidate-photo-wrap img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.summary {
+  box-sizing: border-box;
+  height: 108px;
+  padding: 8px;
+  border: 1px solid #E0E0E0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+  background-color: #ffffff;
+}
+
+.summary p {
+  margin: 0 0 5px 0;
+  color: #383838;
+  letter-spacing: 0;
+}
+
+.summary p:last-child {
+  margin-bottom: 0;
+}
+
+.name {
+  height: 40px;
+}
+
+.role {
+  font-size: 14px;
+  font-weight: 300;
+  height: 24px;
+}
+
+.age {
+  font-size: 14px;
+}
+
+.add-profile {
+  border-radius: 5px;
+  background-color: #7C4D82;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.add-profile::before {
+  content: url("https://nagievr.github.io/assets/images/plus-icon.svg");
+  cursor: pointer;
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 890px) {
+  .candidates > .section-inner {
+    padding-top: 50px;
+  }
+  .candidates h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .candidate-card,
+  .add-profile {
+    width: 172px;
+    height: 336px;
+  }
+}
+
+@media (max-width: 710px) {
+  .candidates h2 {
+    font-size: 30px;
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .candidate-card,
+  .add-profile {
+    width: 130px;
+    height: 286px;
+  }
+  .candidate-photo-wrap {
+    height: 150px;
+  }
+  .summary {
+    height: 136px;
+  }
+  .name,
+  .age {
+    font-size: 14px;
+  }
+  .name {
+    height: 55px;
+  }
+  .role {
+    height: 37px;
+    font-size: 12px;
+  }
+  .age {
+    height: 18px;
+  }
+}
+
 .colored-btn,
 .transparent-btn {
   cursor: pointer;
@@ -724,7 +724,7 @@ section {
 }
 
 .selected::after {
-  content: url("../../assets/images/down-arrow.svg");
+  content: url("https://nagievr.github.io/assets/images/down-arrow.svg");
   position: absolute;
   right: 15px;
   transition: 0.15s;
@@ -883,7 +883,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .arrow.prev::after {
-  content: url("../../assets/images/arrow-prev.svg");
+  content: url("https://nagievr.github.io/assets/images/arrow-prev.svg");
 }
 
 .arrow.next {
@@ -891,7 +891,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .arrow.next::after {
-  content: url("../../assets/images/arrow-next.svg");
+  content: url("https://nagievr.github.io/assets/images/arrow-next.svg");
 }
 
 @media (max-width: 340px) {
